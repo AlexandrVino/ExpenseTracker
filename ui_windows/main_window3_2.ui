@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1010</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1010</width>
+    <height>801</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1010</width>
+     <height>760</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1010</width>
+     <height>760</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="window1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1010</width>
+      <height>770</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>770</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1010</width>
+      <height>770</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #151834;</string>
+    </property>
+    <widget class="QWidget" name="head" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>990</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>990</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>990</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius: 10px;</string>
+     </property>
+     <widget class="QPushButton" name="settings">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('../sources/icons/menu/settings.png') center no-repeat;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="notification">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('../sources/icons/menu/notification.png') center no-repeat;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="name">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans SemiBold</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;*Name*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="photo">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>70</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans SemiBold</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 75px;
+background-image: url('../sources/DataBases/Profil/profilImg.jpg') center no-repeat;
+background-repeat: none;
+border: 1px solid #2c325c;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="footer" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>690</y>
+       <width>990</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>990</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>990</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:15px;</string>
+     </property>
+     <widget class="QPushButton" name="ficon3">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('../sources/icons/menu/me_active.png') center no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flabel1">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#4c558b;&quot;&gt;Home&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flabel2">
+      <property name="geometry">
+       <rect>
+        <x>474</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#4c558b;&quot;&gt;Charts&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ficon1">
+      <property name="geometry">
+       <rect>
+        <x>271</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('../sources/icons/menu/home.png') center no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flabel3">
+      <property name="geometry">
+       <rect>
+        <x>698</x>
+        <y>30</y>
+        <width>31</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#3ef3d3;&quot;&gt;Me&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ficon2">
+      <property name="geometry">
+       <rect>
+        <x>484</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('../sources/icons/menu/chart.png') center no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="f_btn_1">
+      <property name="geometry">
+       <rect>
+        <x>256</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;
+opacity: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">footerbuttons</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="f_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>472</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">footerbuttons</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="f_btn_3">
+      <property name="geometry">
+       <rect>
+        <x>692</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">footerbuttons</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="history" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>510</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>330</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>510</width>
+       <height>560</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius: 10px;</string>
+     </property>
+     <widget class="QLabel" name="stored_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>510</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>330</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>510</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans SemiBold</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;History&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="item1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>491</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>310</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="paying_name">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #7884c1;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Name of payment*&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="paying_prise_1">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>10</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #3ef3d3;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;*Money*&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="item2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>491</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>310</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="paying_name_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #7884c1;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Name of payment*&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="paying_prise_2">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>10</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #3ef3d3;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;*Money*&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addPayment" native="true">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>130</y>
+       <width>344</width>
+       <height>350</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>344</width>
+       <height>350</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>1000</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius: 10px;</string>
+     </property>
+     <widget class="QLabel" name="stored_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>340</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>290</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Add payment &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="payment_type" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>320</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="typepay">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>Type payment:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selected_type">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>5</y>
+         <width>170</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1d2141;
+color: #3ef3d3;
+border-radius: 15px;
+padding: 0 auto;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="payment_prise" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>106</y>
+        <width>320</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="prisepyment">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>Prise payment:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prise">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>5</y>
+         <width>170</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1d2141;
+color: #3ef3d3;
+border-radius: 15px;
+padding: 0 auto;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="payment_state" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>198</y>
+        <width>320</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="prisepyment_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>Pay immediately:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="state">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>5</y>
+         <width>170</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1d2141;
+color: #3ef3d3;
+border-radius: 15px;
+padding: 0 auto;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>No</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pay">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>300</y>
+        <width>320</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #3ef3d3;
+border-radius: 15px;
+color: #000000;</string>
+      </property>
+      <property name="text">
+       <string>Pay</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="payment_date" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>152</y>
+        <width>320</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="prisepyment_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>Select date:</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="date">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>5</y>
+         <width>170</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1d2141;
+color: #3ef3d3;
+border-radius: 15px;
+padding: 0 auto;</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2020</year>
+         <month>1</month>
+         <day>1</day>
+        </datetime>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="payment_card" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>244</y>
+        <width>320</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="prisepyment_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>Card name:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="card">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>5</y>
+         <width>170</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1d2141;
+color: #3ef3d3;
+border-radius: 15px;
+padding: 0 auto;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="profil_7" native="true">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>490</y>
+       <width>231</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>1000</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius: 10px;</string>
+     </property>
+     <widget class="QWidget" name="payment_card_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>200</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="prisepyment_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>5</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>Card name:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="card_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>170</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1d2141;
+color: #3ef3d3;
+border-radius: 15px;
+padding: 0 auto;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pay_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>191</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans SemiBold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #3ef3d3;
+border-radius: 15px;
+color: #000000;</string>
+      </property>
+      <property name="text">
+       <string>Add new payment type</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="profil_8" native="true">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>490</y>
+       <width>231</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>1000</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius: 10px;</string>
+     </property>
+     <widget class="QWidget" name="payment_card_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>200</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid #424983;</string>
+      </property>
+      <widget class="QLabel" name="prisepyment_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>5</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+border: 0;
+background-color: 0;</string>
+       </property>
+       <property name="text">
+        <string>Card name:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selected_type_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>170</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1d2141;
+color: #3ef3d3;
+border-radius: 15px;
+padding: 0 auto;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pay_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>191</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Open Sans SemiBold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #7884C1;
+border-radius: 15px;
+color: #000000;</string>
+      </property>
+      <property name="text">
+       <string>Remove payment type</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="footerbuttons"/>
+ </buttongroups>
+</ui>

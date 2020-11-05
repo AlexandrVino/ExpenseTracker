@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>791</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1010</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1010</width>
+    <height>791</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1010</width>
+     <height>750</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1010</width>
+     <height>750</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="window1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1010</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1010</width>
+      <height>750</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1010</width>
+      <height>750</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #151834;</string>
+    </property>
+    <widget class="QWidget" name="head" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>990</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>990</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>990</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="questions">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat Black</family>
+        <pointsize>12</pointsize>
+        <weight>37</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 300;
+</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;FIQ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="settings">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>48</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/menu/settings.png') center no-repeat;
+background-repeat: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="avatar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat Black</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #fff;
+border-radius:20px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="helo">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Welcome back!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="name">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;*Name*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>675</x>
+        <y>75</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="update_button">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>48</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/menu/update.png') center no-repeat;
+background-repeat: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="habits" native="true">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>130</y>
+       <width>300</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>340</width>
+       <height>290</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="titleHabites">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#fefefe;&quot;&gt;My Spending for *month*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="diagram_costs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>150</width>
+        <height>150</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Black</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #fff;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="labels" native="true">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>60</y>
+        <width>121</width>
+        <height>150</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;</string>
+      </property>
+      <widget class="QLabel" name="first_label_3">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>64</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_color_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>64</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_color">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_color_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>128</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_label_4">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>96</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_label">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>0</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_color_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>32</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_label_5">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>128</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_color_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>96</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="first_label_2">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>32</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="footer" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>690</y>
+       <width>990</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>990</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>990</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QPushButton" name="ficon3">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/menu/me.png') center no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flabel1">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#3ce0c7;&quot;&gt;Home&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flabel2">
+      <property name="geometry">
+       <rect>
+        <x>474</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#4c558b;&quot;&gt;Charts&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ficon1">
+      <property name="geometry">
+       <rect>
+        <x>271</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/menu/home_active.png') center no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flabel3">
+      <property name="geometry">
+       <rect>
+        <x>698</x>
+        <y>30</y>
+        <width>31</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#4c558b;&quot;&gt;Me&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ficon2">
+      <property name="geometry">
+       <rect>
+        <x>484</x>
+        <y>10</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/menu/chart.png') center no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="f_btn_1">
+      <property name="geometry">
+       <rect>
+        <x>256</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;
+opacity: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">footerbuttons</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="f_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>472</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">footerbuttons</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="f_btn_3">
+      <property name="geometry">
+       <rect>
+        <x>692</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">footerbuttons</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="uppcomingBills" native="true">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>390</y>
+       <width>300</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>170</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>330</width>
+       <height>340</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="bills">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>300</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Upcoming Bills&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>300</width>
+        <height>240</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>300</width>
+         <height>240</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="save" native="true">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>400</y>
+       <width>330</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>330</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="stored">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>300</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Spending/Profit for *month*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="diagram">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>35</y>
+        <width>120</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Black</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="smoney1">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>75</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #fff;
+</string>
+      </property>
+      <property name="text">
+       <string>Profit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="smoney2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>100</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #fff;</string>
+      </property>
+      <property name="text">
+       <string>Spending</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>56</x>
+        <y>73</y>
+        <width>45</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/buttons_images/pig.png') center no-repeat;
+background-repeat: none;
+background-color: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>78</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #ff5497;
+border-radius:7px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>103</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #464c7a;
+border-radius:7px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="GraficCash" native="true">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>130</y>
+       <width>330</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>330</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>330</width>
+       <height>290</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="cashyear">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>330</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>330</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;My Spending for *year*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="yearchar">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>290</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>290</width>
+        <height>180</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>290</width>
+        <height>180</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Black</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+border-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="allmoney">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>225</y>
+        <width>290</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>330</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #fff;
+background-color: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;thous.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>245</x>
+        <y>5</y>
+        <width>80</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;
+border: 1px solid #212646;</string>
+      </property>
+      <widget class="QPushButton" name="hiss2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>30</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;
+background-color: #2d325a;
+border: 1px solid #b9bbc9;
+border-radius: 7px;</string>
+       </property>
+       <property name="text">
+        <string>Hiss</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">changeTypeChart</string>
+       </attribute>
+      </widget>
+      <widget class="QPushButton" name="chart2">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>60</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;
+background-color: #2d325a;
+border: 1px solid #b9bbc9;
+border-radius: 7px;</string>
+       </property>
+       <property name="text">
+        <string>Chart</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">changeTypeChart</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="chart_menu2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>10</y>
+        <width>30</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/buttons_images/menu.png');
+background-repeat: none;
+background-position: right;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">menubuttons</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="debts" native="true">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>580</y>
+       <width>330</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>330</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>330</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="paydebts">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>330</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>330</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>330</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Paying Of Debts&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>45</y>
+        <width>201</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Medium</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #62688e;</string>
+      </property>
+      <property name="text">
+       <string>You have planned to seal all the time</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="allmoney_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>45</y>
+        <width>90</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;
+border-radius: 0;
+border: none;
+color: #fff;</string>
+      </property>
+      <property name="text">
+       <string>*Money*</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="month" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>340</width>
+       <height>270</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>340</width>
+       <height>270</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>340</width>
+       <height>275</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="titlemonth">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>340</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#fefefe;&quot;&gt;My Spending for *month*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="monthchar">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>310</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>310</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>310</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Black</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+border-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>255</x>
+        <y>5</y>
+        <width>80</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;
+border: 1px solid #212646;</string>
+      </property>
+      <widget class="QPushButton" name="hiss1">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>30</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;
+background-color: #2d325a;
+border: 1px solid #b9bbc9;
+border-radius: 7px;</string>
+       </property>
+       <property name="text">
+        <string>Hiss</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">changeTypeChart</string>
+       </attribute>
+      </widget>
+      <widget class="QPushButton" name="chart1">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>60</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;
+background-color: #2d325a;
+border: 1px solid #b9bbc9;
+border-radius: 7px;</string>
+       </property>
+       <property name="text">
+        <string>Chart</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">changeTypeChart</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="chart_menu1">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>30</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/buttons_images/menu.png');
+background-repeat: none;
+background-position: right;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">menubuttons</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="month_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>410</y>
+       <width>340</width>
+       <height>270</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>340</width>
+       <height>270</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>340</width>
+       <height>270</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+     </property>
+     <widget class="QLabel" name="titlemonth_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>340</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#fefefe;&quot;&gt;My Income for *month*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="monthchar_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>310</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>310</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>310</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Black</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+border-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_6" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>255</x>
+        <y>5</y>
+        <width>80</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;
+border: 1px solid #212646;</string>
+      </property>
+      <widget class="QPushButton" name="hiss3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>30</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;
+background-color: #2d325a;
+border: 1px solid #b9bbc9;
+border-radius: 7px;</string>
+       </property>
+       <property name="text">
+        <string>Hiss</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">changeTypeChart</string>
+       </attribute>
+      </widget>
+      <widget class="QPushButton" name="chart3">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>60</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Medium</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;
+background-color: #2d325a;
+border: 1px solid #b9bbc9;
+border-radius: 7px;</string>
+       </property>
+       <property name="text">
+        <string>Chart</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">changeTypeChart</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="chart_menu3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>30</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url('sources/icons/buttons_images/menu.png');
+background-repeat: none;
+background-position: right;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">menubuttons</string>
+      </attribute>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="changeTypeChart"/>
+  <buttongroup name="menubuttons"/>
+  <buttongroup name="footerbuttons"/>
+ </buttongroups>
+</ui>
