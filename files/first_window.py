@@ -9,21 +9,28 @@ from files import analysis_tables
 from files import charts
 from files import constants
 
+
 MyTable = analysis_tables.MyTable
 MyChart = charts.MyChart
-
-DATABASE = constants.get_date_base()
+DATABASE = ''
 MONTHS = constants.MONTHS
 DATE = constants.DATE
+error = ''
 
 
 class FirstWindow(QtWidgets.QMainWindow):
+
     def __init__(self, parent):
         super().__init__()
 
         # UI
         self.current_month = MONTHS[DATE.now().month]
         self.parent = parent
+        self.path = 'sources/' + self.parent.user_name + '/DataBases'
+
+        global DATABASE
+        DATABASE = constants.get_date_base(self.parent.user_name)
+
         self.connectUI()
 
     # Connecting first window
@@ -39,7 +46,7 @@ class FirstWindow(QtWidgets.QMainWindow):
             img.close()
         except FileNotFoundError:
             # create and load charts
-            list_months = ['sources/DataBases/Tables/months/' + value.lower() + '_costs.xlsx'
+            list_months = [self.path + '/Tables/months/' + value.lower() + '_costs.xlsx'
                            for key, value in MONTHS.items()]
             for file_directory in list_months:
                 t = MyTable(file_directory)
@@ -103,10 +110,10 @@ class FirstWindow(QtWidgets.QMainWindow):
 
     # Updating chart, where button with text "update" was used
     def update_chart(self):
-        list_months = ['sources/DataBases/Tables/months/' + value.lower() + '_costs.xlsx'
+        list_months = [self.path + '/Tables/months/' + value.lower() + '_costs.xlsx'
                        for key, value in MONTHS.items()]
 
-        DATABASE[self.current_month].mytable = MyTable('sources/DataBases/Tables/months/' +
+        DATABASE[self.current_month].mytable = MyTable(self.path + '/Tables/months/' +
                                                        self.current_month.lower() +
                                                        '_costs.xlsx')
         DATABASE[self.current_month].mytable.sort()
@@ -129,7 +136,8 @@ class FirstWindow(QtWidgets.QMainWindow):
         self.parent.monthchar_2.setPixmap(QPixmap(DATABASE[self.current_month].directory + 'income' +
                                                   DATABASE[self.current_month].name + '.png'))
 
-        self.parent.diagram.setPixmap(QPixmap('sources/images/diagram_' + self.current_month + '.png'))
+        self.parent.diagram.setPixmap(QPixmap('/'.join(self.path.split('/')[:-1]) + '/images/diagram_' +
+                                              self.current_month + '.png'))
 
         self.update_info()
 
@@ -182,10 +190,26 @@ class FirstWindow(QtWidgets.QMainWindow):
                                                       DATABASE[self.current_month].name + '.png'))
             self.parent.widget_6.setVisible(False)
 
+    # Load header
+    def load_profil(self):
+        con = sqlite3.connect('sources/profiles.db')
+        cur = con.cursor()
+        user = cur.execute("""SELECT img_directory FROM profiles
+                                    WHERE username = ?""", (self.parent.user_name,)).fetchone()[0]
+        try:
+            self.parent.avatar.setStyleSheet('border-radius: 45px;'
+                                             f"background-image: url({user}) center no-repeat;")
+        except TypeError:
+            pass
+        self.parent.name.setText(self.parent.user_name)
+        self.parent.name.setStyleSheet('color: #fff')
+
     # Connecting info with labels
     def update_info(self):
 
         self.connect_bills()
+        self.load_profil()
+
         list_of_items = [self.parent.titlemonth, self.parent.stored, self.parent.cashyear,
                          self.parent.allmoney, self.parent.titleHabites, self.parent.titlemonth_2]
 
@@ -215,7 +239,7 @@ class FirstWindow(QtWidgets.QMainWindow):
                 text += ' ' + self.current_month
                 item.setText(text)
 
-        con = sqlite3.connect('sources/DataBases/dbFiles/payments.db')
+        con = sqlite3.connect(self.path + '/dbFiles/payments.db')
         cur = con.cursor()
         key = cur.execute("""SELECT prise FROM history
                             WHERE type = 0""").fetchall()
@@ -232,7 +256,7 @@ class FirstWindow(QtWidgets.QMainWindow):
     # Connecting unpaid widget
     def connect_bills(self):
 
-        con = sqlite3.connect('sources/DataBases/dbFiles/payments.db')
+        con = sqlite3.connect(self.path + '/dbFiles/payments.db')
         cur = con.cursor()
         text = cur.execute("""SELECT * FROM history
                                 WHERE type = 0""").fetchall()
@@ -245,13 +269,12 @@ class FirstWindow(QtWidgets.QMainWindow):
         main_widget = QtWidgets.QWidget()
 
         if any(text):
-            text = list(sorted(text, key=lambda x: -x[-1]))
+            text = list(sorted(text, key=lambda x: -x[-2]))
             text = [list(elem) for elem in text]
 
             type_id = cur.execute("""SELECT * FROM types_payments""").fetchall()
             type_id = [list(elem) for elem in type_id]
             type_id = {elem[0]: elem[1] for elem in type_id}
-
             for i, item in enumerate(text):
                 text[i][1] = type_id[item[1]]
             count = len(text[:6]) * 40
@@ -296,7 +319,7 @@ class FirstWindow(QtWidgets.QMainWindow):
                                     'border: none;')
                 prise.setFont(font)
                 prise.setText("<html><head/><body><p align=\"right\"><span>" +
-                              str(elem[-2]) + '₽' + "</span></p></body></html>")
+                              str(elem[-3]) + '₽' + "</span></p></body></html>")
 
                 btn = QtWidgets.QPushButton(new_widget)
                 btn.resize(50, 20)
@@ -350,19 +373,29 @@ class FirstWindow(QtWidgets.QMainWindow):
         DATABASE[MONTHS[int(keys[0].split('.')[1])]].mytable.add_payment(keys[1],
                                                                          float(keys[2][:-1]),
                                                                          int(keys[0].split('.')[0]))
-        con = sqlite3.connect('sources/DataBases/dbFiles/payments.db')
+        con = sqlite3.connect(self.path + '/dbFiles/payments.db')
         cur = con.cursor()
 
         my_type = keys[1]
         my_type = cur.execute("""SELECT id FROM types_payments
                                     WHERE type_name = ?""", (my_type,)).fetchone()[0]
 
-        first_id = cur.execute("""SELECT id FROM HISTORY
+        first_id = cur.execute("""SELECT id, card FROM HISTORY
                                     WHERE type_of_payment = ? AND date = ? AND prise = ? AND type = 0""",
-                               (my_type, keys[0], keys[2][:-1])).fetchone()[0]
+                               (my_type, keys[0], keys[2][:-1])).fetchone()
+
         cur.execute("""UPDATE HISTORY SET type = 1 
                     WHERE id = ? AND type = 0""",
-                    (first_id,))
+                    (first_id[0],))
+        con.commit()
+        con.close()
+        con = sqlite3.connect(self.path + '/dbFiles/cards.db')
+        cur = con.cursor()
+        cur.execute(f"""UPDATE card 
+                        SET money = money - ?
+                        WHERE bank_name = ? AND digits = ?""", (keys[2][:-1],
+                                                                first_id[1].split()[0],
+                                                                int(first_id[1].split()[-1])))
         con.commit()
         con.close()
         self.update_info()
@@ -383,16 +416,15 @@ class FirstWindow(QtWidgets.QMainWindow):
                                     'color: #3ef3d3;')
 
         self.current_month = [item for item in MONTHS.values() if item[:3].lower() == self.sender().text().lower()][0]
-        month_file_name = 'sources/DataBases/Tables/months/' + \
-                          self.current_month + '_costs.xlsx'
+        month_file_name = self.path + '/Tables/months/' + self.current_month + '_costs.xlsx'
         db = MyChart(MyTable(month_file_name), self.current_month,
-                     'sources/images/', DATABASE[self.current_month].type)
+                     '/'.join(self.path.split('/')[:-1]) + '/images/', DATABASE[self.current_month].type)
         DATABASE[self.current_month] = db
 
         try:  # checking that the images have been taken
-            img = open('sources/images/' + self.current_month + '.png', 'r')
+            img = open('/'.join(self.path.split('/')[:-1]) + '/images/' + self.current_month + '.png', 'r')
             img.close()
-            img = open('sources/images/' + 'diagram_' + self.current_month + '.png', 'r')
+            img = open('/'.join(self.path.split('/')[:-1]) + '/images/' + 'diagram_' + self.current_month + '.png', 'r')
             img.close()
         except FileNotFoundError:
             db.draw_month_chart()
@@ -401,11 +433,12 @@ class FirstWindow(QtWidgets.QMainWindow):
         cols = db.draw_costs_diagram()
         self.change_labels_style(cols)
 
-        self.parent.monthchar.setPixmap(QPixmap('sources/images/' + self.current_month + '.png'))
-        self.parent.monthchar_2.setPixmap(QPixmap('sources/images/' + 'income' + self.current_month + '.png'))
-        self.parent.diagram.setPixmap(QPixmap('sources/images/' + 'diagram_' + self.current_month + '.png'))
-        self.parent.diagram_costs.setPixmap(QPixmap(DATABASE[self.current_month].directory + 'diagram_costs_' +
-                                                    DATABASE[self.current_month].name + '.png'))
+        self.parent.monthchar.setPixmap(QPixmap('/'.join(self.path.split('/')[:-1]) + '/images/' +
+                                                self.current_month + '.png'))
+        self.parent.monthchar_2.setPixmap(QPixmap('/'.join(self.path.split('/')[:-1]) + '/images/' + 'income' +
+                                                  self.current_month + '.png'))
+        self.parent.diagram.setPixmap(QPixmap('/'.join(self.path.split('/')[:-1]) + '/images/' + 'diagram_' +
+                                              self.current_month + '.png'))
         self.parent.diagram_costs.setPixmap(QPixmap(DATABASE[self.current_month].directory + 'diagram_costs_' +
                                                     DATABASE[self.current_month].name + '.png'))
 
@@ -448,22 +481,43 @@ class FirstWindow(QtWidgets.QMainWindow):
         color_index = 0
         text_index = 0
         list_labels = sorted(self.parent.labels.children(), key=lambda item: item.objectName())
-
         for i, label in enumerate(list_labels):
             label.setFont(font)
-            if 'color' in label.objectName():
-                label.setStyleSheet(f'background-color: {colors[color_index]};'
-                                    'border-radius:10px;'
-                                    'border: none;')
-                color_index += 1
-            else:
+            if not any(items):
                 label.setStyleSheet('background-color: none;'
                                     'border-radius:none;'
-                                    'border: none;'
-                                    'color: #fff;')
-                label.setText(str(types[text_index]))
-                text_index += 1
-        self.parent.label_11.setText("<html><head/><body><p align=\"center\"><span>" +
-                                     str(sum(values)) + '₽' + "</span></p></body></html>")
+                                    'border: none;')
+                label.setText('')
+            try:
+                if 'color' in label.objectName():
+                    label.setStyleSheet(f'background-color: {colors[color_index]};'
+                                        'border-radius:10px;'
+                                        'border: none;')
+                    color_index += 1
+                else:
+                    label.setStyleSheet('background-color: none;'
+                                        'border-radius:none;'
+                                        'border: none;'
+                                        'color: #fff;')
+                    label.setText(str(types[text_index]))
+                    text_index += 1
+            except IndexError:
+                label.setStyleSheet('background-color: none;'
+                                    'border-radius:none;'
+                                    'border: none;')
+                label.setText('')
+        if any(items):
+            self.parent.label_11.setText("<html><head/><body><p align=\"center\"><span>" +
+                                         str(sum(values)) + '₽' + "</span></p></body></html>")
+        else:
+            self.parent.label_11.setText("<html><head/><body><p align=\"center\"><span>" +
+                                         str(0) + '₽' + "</span></p></body></html>")
         font.setPointSize(11)
         self.parent.label_11.setFont(font)
+
+
+# This function show an exception, if it occurs
+def error_show(text):
+    global error
+    error = Error(text)
+    error.show()

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="666549c1-5b72-4ef8-b693-3c1b6bab72da" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ig6s31jrpveq2EAorCFmukqa0Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Python\Yandex\Expense_Tracker\sources\DataBases\Tables\dayInMonth" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\документы\Саша\MyProject\Expense_Tracker\sources" />
+      <recent name="F:\документы\Саша\MyProject\Expense_Tracker" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expense_Tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Expense_Tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expense_Tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Expense_Tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/files/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expense_Tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expense_Tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:\документы\Саша\MyProject\Expense_Tracker\test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="third_window (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expense_Tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/files/third_window.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (3)" />
+      <item itemvalue="Python.third_window (1)" />
+      <item itemvalue="Python.example" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.test (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.example" />
+        <item itemvalue="Python.third_window (1)" />
+        <item itemvalue="Python.main (3)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="666549c1-5b72-4ef8-b693-3c1b6bab72da" name="Default Changelist" comment="" />
+      <created>1602317090216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602317090216</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="346" y="108" key="#Inspections" timestamp="1605107382696">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="346" y="108" key="#Inspections/0.0.1440.860@0.0.1440.860" timestamp="1605107382696" />
+    <state x="174" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605002451570">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="174" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1605002451570" />
+    <state x="470" y="231" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603900966747">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="470" y="231" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1603900966747" />
+    <state x="92" y="92" width="1256" height="676" key="DiffContextDialog" timestamp="1602764092826">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="92" y="92" width="1256" height="676" key="DiffContextDialog/0.0.1440.860@0.0.1440.860" timestamp="1602764092825" />
+    <state x="500" y="184" key="FileChooserDialogImpl" timestamp="1605359067348">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="500" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1605359067348" />
+    <state width="1419" height="185" key="GridCell.Tab.0.bottom" timestamp="1605359068309">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="185" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1605359068309" />
+    <state width="1579" height="156" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1604489909103" />
+    <state width="1419" height="185" key="GridCell.Tab.0.center" timestamp="1605359068309">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="185" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1605359068309" />
+    <state width="1579" height="156" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1604489909103" />
+    <state width="1419" height="185" key="GridCell.Tab.0.left" timestamp="1605359068309">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="185" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1605359068309" />
+    <state width="1579" height="156" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1604489909103" />
+    <state width="1419" height="185" key="GridCell.Tab.0.right" timestamp="1605359068309">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="185" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1605359068309" />
+    <state width="1579" height="156" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1604489909103" />
+    <state width="1419" height="275" key="GridCell.Tab.1.bottom" timestamp="1604838075402">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="275" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1604838075402" />
+    <state width="1419" height="275" key="GridCell.Tab.1.center" timestamp="1604838075402">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="275" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1604838075402" />
+    <state width="1419" height="275" key="GridCell.Tab.1.left" timestamp="1604838075402">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="275" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1604838075402" />
+    <state width="1419" height="275" key="GridCell.Tab.1.right" timestamp="1604838075402">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1419" height="275" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1604838075402" />
+    <state x="426" y="96" key="SettingsEditor" timestamp="1605178274468">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="426" y="96" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1605178274468" />
+    <state x="473" y="96" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1604486623888" />
+    <state x="670" y="50" width="1008" height="848" key="dock-window-1" timestamp="1605099316657">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="670" y="50" width="1008" height="848" key="dock-window-1/0.0.1440.860@0.0.1440.860" timestamp="1605099316657" />
+    <state x="383" y="134" width="716" height="848" key="dock-window-2" timestamp="1605099316657">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="383" y="134" width="716" height="848" key="dock-window-2/0.0.1440.860@0.0.1440.860" timestamp="1605099316657" />
+    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1604759796571">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1604759796571" />
+  </component>
+</project>

@@ -1,10 +1,13 @@
 from datetime import datetime
+import sqlite3
 
 # import classes from my files
 from files import analysis_tables
 from files import charts
 
-MyTable, CurrencyTable = analysis_tables.MyTable, analysis_tables.CurrencyTable
+MyTable, CurrencyTable, CompanyTable = analysis_tables.MyTable, \
+                                       analysis_tables.CurrencyTable, \
+                                       analysis_tables.CompanyTable
 MyChart = charts.MyChart
 
 DATABASE = {}
@@ -14,8 +17,8 @@ MONTHS = {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'Jun
 DATE = datetime
 
 
-def get_default_date_base():
-    year_file_name = 'sources/DataBases/Tables/years/2020.xlsx'
+def get_default_date_base(username):
+    year_file_name = 'sources/' + username + '/DataBases/Tables/years/2020.xlsx'
 
     for key, value in MONTHS.items():
         month_file_name = 'sources/DataBases/Tables/months/' + \
@@ -23,20 +26,20 @@ def get_default_date_base():
         DATABASE[value] = MyChart(MyTable(month_file_name),
                                   value,
                                   'sources/images/', 'hiss')
-    DATABASE['currency'] = MyChart(CurrencyTable(), 'exchange_rates_month',
+    DATABASE['currency'] = MyChart(CurrencyTable(username), 'exchange_rates_month',
                                    'sources/images/', 'chart')
 
     DATABASE[DATE.year] = MyChart(MyTable(year_file_name),
                                   str(DATE.year),
                                   'sources/images/', 'chart')
 
-    update_tables()
+    update_tables(username)
     save_constants()
     return DATABASE
 
 
-def update_tables():
-    list_months = ['sources/DataBases/Tables/months/' + value.lower() + '_costs.xlsx'
+def update_tables(username):
+    list_months = ['sources/' + username + '/DataBases/Tables/months/' + value.lower() + '_costs.xlsx'
                    for key, value in MONTHS.items()]
     for file_directory in list_months:
         t = MyTable(file_directory)
@@ -46,22 +49,15 @@ def update_tables():
     DATABASE[DATE.year].mytable.update_year_table(list_months)
 
 
-def save_constants(db=DATABASE):
-    file = open('sources/DataBases/txtFiles/database.txt', 'w', encoding='utf8')
-    for key, value in db.items():
-        if key != 2020:
-            file.write(str(key) + ' ' + value.mytable.file_name + ' ' +
-                       value.name + ' ' + value.directory + ' ' + value.type)
-            file.write('\n')
-        else:
-            file.write(str(key) + ' ' + value.mytable.file_name + ' ' +
-                       value.name + ' ' + value.directory + ' ' + value.type)
+# Function parse strings to my classes
+def get_date_base(username):
 
+    con = sqlite3.connect('sources/' + username + '/DataBases/dbFiles/database.db')
+    cur = con.cursor()
 
-def get_date_base():
-    file = open('sources/DataBases/txtFiles/database.txt', 'r', encoding='utf8').readlines()
-    for line in file:
-        line = line.split()
+    text = [list(item) for item in cur.execute("""SELECT * FROM database_table""")]
+
+    for line in text:
         key = line[0]
         table_directory = line[1]
         name = line[2]
@@ -69,13 +65,18 @@ def get_date_base():
         my_type = line[4]
         if key in MONTHS.values() or key == '2020':
             DATABASE[key] = MyChart(MyTable(table_directory),
-                                            name,
-                                            directory,
-                                            my_type)
-        else:
-            DATABASE[key] = MyChart(CurrencyTable(),
-                                    name,
-                                    directory,
-                                    my_type)
-    return DATABASE
+                                    name, directory, my_type)
 
+        else:
+            DATABASE[key] = MyChart(CurrencyTable(username), name, directory, my_type)
+
+    text = [list(item) for item in cur.execute("""SELECT * FROM companies""")]
+    for line in text:
+        name = line[1]
+        table_directory = line[2]
+        directory_img = line[3]
+        type_chart = line[4]
+        type_company = line[5]
+        DATABASE[name] = MyChart(CompanyTable(table_directory, name, username),
+                                 name, directory_img, type_chart, type_company)
+    return DATABASE

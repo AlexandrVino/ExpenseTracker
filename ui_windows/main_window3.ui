@@ -73,152 +73,6 @@
     <property name="styleSheet">
      <string notr="true">background-color: #151834;</string>
     </property>
-    <widget class="QWidget" name="head" native="true">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>990</width>
-       <height>110</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>990</width>
-       <height>110</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>990</width>
-       <height>110</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: #2c325c;
-border-radius:10px;</string>
-     </property>
-     <widget class="QLabel" name="questions">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>41</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Montserrat Black</family>
-        <pointsize>12</pointsize>
-        <weight>37</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font-weight: 300;
-</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;FIQ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="settings">
-      <property name="geometry">
-       <rect>
-        <x>950</x>
-        <y>10</y>
-        <width>24</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>24</width>
-        <height>24</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>24</width>
-        <height>24</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-image: url('sources/icons/menu/settings.png') center no-repeat;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="avatar">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Montserrat Black</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #fff;
-border-radius:20px;</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="helo">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>50</y>
-        <width>131</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Montserrat SemiBold</family>
-        <pointsize>11</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Welcome back!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="name">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>70</y>
-        <width>131</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Montserrat SemiBold</family>
-        <pointsize>11</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;*Name*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-    </widget>
     <widget class="QWidget" name="footer" native="true">
      <property name="geometry">
       <rect>
@@ -535,7 +389,7 @@ border-radius:10px;</string>
         <x>0</x>
         <y>39</y>
         <width>330</width>
-        <height>261</height>
+        <height>260</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -547,7 +401,7 @@ border-radius:10px;</string>
          <x>0</x>
          <y>0</y>
          <width>330</width>
-         <height>261</height>
+         <height>260</height>
         </rect>
        </property>
       </widget>
@@ -716,8 +570,7 @@ background-color: 0;</string>
        <property name="styleSheet">
         <string notr="true">background-color: #1d2141;
 color: #3ef3d3;
-border-radius: 15px;
-padding: 0 auto;</string>
+border-radius: 15px;</string>
        </property>
       </widget>
      </widget>
@@ -1045,7 +898,7 @@ background-color: 0;</string>
         <string notr="true">background-color: #1d2141;
 color: #3ef3d3;
 border-radius: 15px;
-padding: 0 auto;</string>
+padding-left: 50px;</string>
        </property>
        <property name="dateTime">
         <datetime>
@@ -1163,9 +1016,9 @@ padding: 0 0 0 25px;</string>
      <property name="geometry">
       <rect>
        <x>360</x>
-       <y>520</y>
+       <y>485</y>
        <width>145</width>
-       <height>160</height>
+       <height>195</height>
       </rect>
      </property>
      <property name="minimumSize">
@@ -1206,7 +1059,7 @@ background-color: none;</string>
       <property name="geometry">
        <rect>
         <x>12</x>
-        <y>120</y>
+        <y>140</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -1247,7 +1100,7 @@ color: #000;</string>
       <property name="geometry">
        <rect>
         <x>7</x>
-        <y>70</y>
+        <y>80</y>
         <width>130</width>
         <height>30</height>
        </rect>
@@ -1289,7 +1142,7 @@ padding: 0 0 0 15px;</string>
       <property name="geometry">
        <rect>
         <x>12</x>
-        <y>40</y>
+        <y>50</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -1328,9 +1181,9 @@ background-color: 0;</string>
      <property name="geometry">
       <rect>
        <x>515</x>
-       <y>520</y>
+       <y>485</y>
        <width>145</width>
-       <height>160</height>
+       <height>195</height>
       </rect>
      </property>
      <property name="minimumSize">
@@ -1371,7 +1224,7 @@ background-color: none;</string>
       <property name="geometry">
        <rect>
         <x>12</x>
-        <y>120</y>
+        <y>140</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -1412,7 +1265,7 @@ color: #000000;</string>
       <property name="geometry">
        <rect>
         <x>12</x>
-        <y>40</y>
+        <y>50</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -1450,7 +1303,7 @@ background-color: 0;</string>
       <property name="geometry">
        <rect>
         <x>7</x>
-        <y>70</y>
+        <y>80</y>
         <width>130</width>
         <height>30</height>
        </rect>
@@ -1786,7 +1639,7 @@ padding: 0 0 0 15px;
        <x>360</x>
        <y>325</y>
        <width>300</width>
-       <height>185</height>
+       <height>151</height>
       </rect>
      </property>
      <property name="minimumSize">
@@ -1823,110 +1676,11 @@ background-color: none;</string>
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Remove card&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QWidget" name="payment_prise_3" native="true">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>45</y>
-        <width>280</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>280</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>280</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;</string>
-      </property>
-      <widget class="QLabel" name="prisepyment_8">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>5</y>
-         <width>91</width>
-         <height>30</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>Open Sans SemiBold</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: #ffffff;
-border: 0;
-background-color: 0;</string>
-       </property>
-       <property name="text">
-        <string>Bank's name:</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="select_bank">
-       <property name="geometry">
-        <rect>
-         <x>110</x>
-         <y>5</y>
-         <width>170</width>
-         <height>30</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>170</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>130</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: #1d2141;
-color: #3ef3d3;
-border-radius: 15px;
-padding: 0 0 0 15px;</string>
-       </property>
-      </widget>
-     </widget>
      <widget class="QPushButton" name="remove_card">
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>140</y>
+        <y>110</y>
         <width>120</width>
         <height>30</height>
        </rect>
@@ -1963,36 +1717,36 @@ color: #000000;</string>
        <string notr="true">card_buttons</string>
       </attribute>
      </widget>
-     <widget class="QWidget" name="payment_prise_5" native="true">
+     <widget class="QWidget" name="payment_card_2" native="true">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>90</y>
-        <width>280</width>
-        <height>40</height>
+        <x>0</x>
+        <y>30</y>
+        <width>300</width>
+        <height>80</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>280</width>
-        <height>40</height>
+        <width>300</width>
+        <height>80</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>280</width>
-        <height>40</height>
+        <width>300</width>
+        <height>80</height>
        </size>
       </property>
       <property name="styleSheet">
        <string notr="true">border: none;</string>
       </property>
-      <widget class="QLabel" name="prisepyment_11">
+      <widget class="QLabel" name="prisepyment_8">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>135</x>
          <y>5</y>
-         <width>91</width>
+         <width>30</width>
          <height>30</height>
         </rect>
        </property>
@@ -2022,27 +1776,27 @@ border: 0;
 background-color: 0;</string>
        </property>
        <property name="text">
-        <string>Last 4 digits:</string>
+        <string>Card</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="select_digits">
+      <widget class="QComboBox" name="select_card_name_3">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>5</y>
-         <width>170</width>
+         <x>60</x>
+         <y>35</y>
+         <width>180</width>
          <height>30</height>
         </rect>
        </property>
        <property name="minimumSize">
         <size>
-         <width>170</width>
+         <width>180</width>
          <height>30</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>130</width>
+         <width>180</width>
          <height>30</height>
         </size>
        </property>
@@ -2058,7 +1812,7 @@ background-color: 0;</string>
         <string notr="true">background-color: #1d2141;
 color: #3ef3d3;
 border-radius: 15px;
-padding: 0 0 0 15px;</string>
+padding: 0 0 0 25px;</string>
        </property>
       </widget>
      </widget>
@@ -2106,24 +1860,6 @@ background-color: none;</string>
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cards&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QStackedWidget" name="stackedWidget">
-      <property name="geometry">
-       <rect>
-        <x>25</x>
-        <y>40</y>
-        <width>290</width>
-        <height>220</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: 0.5px solid #464c7a;</string>
-      </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="page"/>
-      <widget class="QWidget" name="page_2"/>
-     </widget>
      <widget class="QPushButton" name="right_arrow">
       <property name="geometry">
        <rect>
@@ -2142,6 +1878,9 @@ background-repeat: none;</string>
       <property name="text">
        <string/>
       </property>
+      <attribute name="buttonGroup">
+       <string notr="true">arrows</string>
+      </attribute>
      </widget>
      <widget class="QPushButton" name="left_arrow">
       <property name="geometry">
@@ -2161,6 +1900,24 @@ background-repeat: none;</string>
       <property name="text">
        <string/>
       </property>
+      <attribute name="buttonGroup">
+       <string notr="true">arrows</string>
+      </attribute>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>60</y>
+        <width>290</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;</string>
+      </property>
+      <widget class="QWidget" name="page_1"/>
+      <widget class="QWidget" name="page_2"/>
      </widget>
     </widget>
     <widget class="QWidget" name="profil_12" native="true">
@@ -2206,7 +1963,7 @@ background-color: none;</string>
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Add money&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="add_card_2">
+     <widget class="QPushButton" name="add_money">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -2520,7 +2277,7 @@ background-color: 0;</string>
         <string notr="true">background-color: #1d2141;
 color: #3ef3d3;
 border-radius: 15px;
-padding: 0 auto;</string>
+padding-left: 50px;</string>
        </property>
        <property name="dateTime">
         <datetime>
@@ -2534,6 +2291,127 @@ padding: 0 auto;</string>
        </property>
       </widget>
      </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="head" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>990</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>990</width>
+      <height>110</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>990</width>
+      <height>110</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #2c325c;
+border-radius:10px;</string>
+    </property>
+    <widget class="QPushButton" name="settings">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>10</y>
+       <width>24</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url('sources/icons/menu/settings.png') center no-repeat;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="avatar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Black</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-radius:45px;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="helo">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>35</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat SemiBold</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Welcome back!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>55</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat SemiBold</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;*Name*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
     </widget>
    </widget>
   </widget>
@@ -2556,5 +2434,6 @@ padding: 0 auto;</string>
   <buttongroup name="type_payment"/>
   <buttongroup name="footerbuttons"/>
   <buttongroup name="card_buttons"/>
+  <buttongroup name="arrows"/>
  </buttongroups>
 </ui>
