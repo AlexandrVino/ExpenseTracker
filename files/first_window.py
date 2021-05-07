@@ -9,7 +9,6 @@ from files import analysis_tables
 from files import charts
 from files import constants
 
-
 MyTable = analysis_tables.MyTable
 MyChart = charts.MyChart
 DATABASE = ''
@@ -224,9 +223,11 @@ class FirstWindow(QtWidgets.QMainWindow):
                     text += self.current_month
                 elif item == self.parent.cashyear:
                     text += str(DATE.now().year)
-                elif item == self.parent.allmoney:
+                elif item == self.parent.allmoney and str(
+                        type(DATABASE[str(DATE.now().year)].mytable)) != "<class 'files.analysis_tables.CurrencyTable'>":
+                    print(str(type(DATABASE[str(DATE.now().year)].mytable)))
                     money = list(DATABASE[str(DATE.now().year)].mytable.table['Итого'])[0]
-                    text += str(money) + ' ₽ Spent in 2020'
+                    text += str(money) + f' ₽ Spent in {DATE.now().year}'
                 item.setText(text)
 
             if self.current_month not in text and (item == self.parent.titlemonth or

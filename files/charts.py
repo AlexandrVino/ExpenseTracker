@@ -126,23 +126,26 @@ class MyChart:
         fig = plt.figure()
         ax = fig.add_subplot(111, facecolor='#2c396c')
         x_data = list(self.mytable.table.columns)
-        x_data.remove('Итого')
-        y_data = [self.mytable.table[col][0] for col in self.mytable.table.columns
-                  if col not in ['Итого', 'Unnamed: 0', 'День']]
-        while y_data[0] == 0 and len(y_data) > 3 and \
-                x_data[0][:3].lower() != self.months[datetime.now().month].lower():
-            y_data = y_data[1:]
-            x_data = x_data[1:]
+        try:
+            x_data.remove('Итого')
+            y_data = [self.mytable.table[col][0] for col in self.mytable.table.columns
+                      if col not in ['Итого', 'Unnamed: 0', 'День']]
+            while y_data[0] == 0 and len(y_data) > 3 and \
+                    x_data[0][:3].lower() != self.months[datetime.now().month].lower():
+                y_data = y_data[1:]
+                x_data = x_data[1:]
 
-        while y_data[-1] == 0 and len(y_data) > 3 and \
-                x_data[-1][:3].lower() != self.months[datetime.now().month].lower():
-            y_data = y_data[:-1]
-            x_data = x_data[:-1]
+            while y_data[-1] == 0 and len(y_data) > 3 and \
+                    x_data[-1][:3].lower() != self.months[datetime.now().month].lower():
+                y_data = y_data[:-1]
+                x_data = x_data[:-1]
 
-        if self.type == 'hiss':
-            ax.bar(x_data, y_data, color='#3b6fea')
-        else:
-            ax.plot(x_data, y_data, color='#3b6fea')
+            if self.type == 'hiss':
+                ax.bar(x_data, y_data, color='#3b6fea')
+            else:
+                ax.plot(x_data, y_data, color='#3b6fea')
+        except ValueError:
+            return
         try:
             y_min = min([item for item in ax.get_yticks() if int(item) > 0])
             index = int('1' + str(int(y_min))[1:])

@@ -74,8 +74,9 @@ class MyTable:
             year_table[month] = sum(list(table['Итого'][:30]))
         del year_table[0]
         self.table = year_table
-        self.table['Итого'] = sum([self.table[col] for col in self.table.columns
-                                   if col not in self.list_of_none_col])
+        if type(self) is not CurrencyTable:
+            self.table['Итого'] = sum([self.table[col] for col in self.table.columns
+                                       if col not in self.list_of_none_col])
         self.save_table()
 
     def __str__(self):
@@ -139,6 +140,7 @@ class MyTable:
 class CurrencyTable(MyTable):
 
     def __init__(self, user_name):
+
         self.headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3)' +
                                       'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'}
 

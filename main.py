@@ -7,7 +7,7 @@ import sqlite3
 from PyQt5.QtCore import Qt
 from PIL import Image
 import os
-
+from datetime import datetime
 
 # import classes from my files
 from files import analysis_tables
@@ -249,12 +249,12 @@ class RegistrationWidget(QMainWindow):
         directory = 'sources/' + username + '/DataBases/Tables/'
         directory_img = 'sources/' + username + '/images/'
         names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
-                 'November', 'December', 'currency', '2020']
+                 'November', 'December', 'currency', datetime.now().year]
         tables = ['months/january_costs.xlsx', 'months/february_costs.xlsx', 'months/march_costs.xlsx',
                   'months/april_costs.xlsx', 'months/may_costs.xlsx', 'months/june_costs.xlsx',
                   'months/july_costs.xlsx', 'months/august_costs.xlsx', 'months/september_costs.xlsx',
                   'months/october_costs.xlsx', 'months/november_costs.xlsx', 'months/december_costs.xlsx',
-                  'sources/currency.xlsx', 'years/2020.xlsx']
+                  'sources/currency.xlsx', f'years/{datetime.now().year}.xlsx']
         time = names.copy()
         time[-2] = 'exchange_rates_month'
 
@@ -366,7 +366,6 @@ class Start(QMainWindow):
                 global USER
                 USER = []
                 USER += list(user)
-                print(USER)
             else:
                 error_show('Login or password is entered incorrectly !')
         except AssertionError:
