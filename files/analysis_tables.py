@@ -154,6 +154,9 @@ class CurrencyTable(MyTable):
         self.cols = self.table.columns
         self.check_currency()
 
+    def save_table(self):
+        self.table.to_excel(self.file_name,  columns=[col for col in self.cols])
+
     # Function for parsing currencies in table
     def check_currency(self):
         try:
